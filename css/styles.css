@@ -22,7 +22,7 @@ body{
     background-color: #FFFFFF;
     font-size: 14px;
     letter-spacing: 0.03em;
-    margin: 0;
+    
 }
 
 
@@ -44,11 +44,8 @@ img {
 }
 
 .section {
-    padding-top: 94px;  
-}
-
-.section:last-child{
-    padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;  
 }
 
 
@@ -170,9 +167,8 @@ img {
 
 .slogan-btn {
 background-color: var(--brand-color-3);
-width: 1600px;
-height: 600px;
 text-align: center;
+padding: 200px 0;
 }
 
 .slogan {
@@ -185,7 +181,6 @@ text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--brand-color-4);
-    padding-top:  200px;
     margin: 0 auto;
     margin-bottom: 30px;
     width: 696px;
