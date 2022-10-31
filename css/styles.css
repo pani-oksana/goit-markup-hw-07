@@ -151,6 +151,10 @@ img {
 .contakt-link {
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
     font-style: normal;
     font-weight: 500;
@@ -159,16 +163,26 @@ img {
     color: var(--brand-color-2);
 }
 
-.contakt-link:hover, .contakt-link:focus {
+
+.contakt-link:hover, .contakt-link:focus{
     color: var(--brand-color-1);
 }
-
+.contacts-icon{
+    fill: currentColor;
+}
 /*main*/
 
 .slogan-btn {
 background-color: var(--brand-color-3);
 text-align: center;
 padding: 200px 0;
+max-width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+background-position: center;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+url(/images/background-img.jpg);
 }
 
 .slogan {
@@ -219,8 +233,20 @@ padding: 200px 0;
 }
 
 .benefits-list-item{
-    width: 270px;
+    
 }
+
+.benefist-picture{
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .benefits-list-item:not(:first-child){
     margin-left: 30px;
 }
@@ -230,6 +256,7 @@ padding: 200px 0;
     font-size: 14px;
     line-height: 1.1;
     text-transform: uppercase;
+    margin-top: 30px;
     margin-bottom: 10px;   
 }
 
@@ -300,12 +327,78 @@ gap: 30px;
     
 }
 
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.socials-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    background-color: var(--brand-color-4) ;
+    border-radius: 50%;
+}
+
+
+.socials-link:hover,
+.socials-link:focus{
+    color: var(--brand-color-4);
+    background-color: var(--brand-color-1); 
+}
+.socials-icon{
+    fill: currentColor;
+}
+
+/*clients*/
+
+.clients-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+
+}
+
+.clients-link:hover,
+.clients-link:focus{
+    border-color: var(--brand-color-1);
+    color: var(--brand-color-1);
+}
+
+.clients-icon{
+    fill: currentColor;
+}
+
 
 /* footer*/
 
 .footer{
     background-color: var(--brand-color-3);
     padding: 60px 0;
+}
+
+.footer-container{
+display: flex;
+align-items: baseline;
 }
 
 .logo-footer {
@@ -362,7 +455,47 @@ gap: 30px;
     color: var(--brand-color-1);
 }
 
+.socials-footer{
+    margin-left: 70px;
+}
 
+.subtitle-footer{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--brand-color-4);
+}
+
+.socials-footer-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.socials-link-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    color: var(--brand-color-4);
+    background-color: rgba(91, 97, 102, 0.4 ) ;
+    border-radius: 50%;
+}
+
+
+.socials-link-footer:hover,
+.socials-link-footer:focus{
+    color: var(--brand-color-4);
+    background-color: var(--brand-color-1); 
+}
+.socials-icon-footer{
+    fill: currentColor;
+}
 
 /*PORTFOLIO*/
 
@@ -404,6 +537,13 @@ gap: 30px;
     color: var(--brand-color-4);
     background-color:var(--brand-color-1);
 }
+
+
+.project-card:hover,
+.project-card:focus{
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 .project-text-box{
     padding:  20px 24px;
