@@ -182,7 +182,9 @@ margin-left: auto;
 margin-right: auto;
 background-position: center;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
-url(/images/background-img.jpg);
+url(../images/background-img.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .slogan {
@@ -222,6 +224,7 @@ url(/images/background-img.jpg);
 .btn:hover, .btn:focus {
     color: var(--brand-color-4);
     background-color:#188CE8;
+    cursor: pointer;
 }
 
 
@@ -270,6 +273,10 @@ url(/images/background-img.jpg);
 }
 
         /* Чим ми займаємося*/
+
+.about{
+    padding-top: 0;
+}
 
 .title {
     font-weight: 700;
@@ -372,7 +379,7 @@ gap: 30px;
     width: 170px;
     height: 92px;
 
-    border: 1px solid #AFB1B8;
+    border: 1px solid currentColor;
     border-radius: 4px;
     color: #AFB1B8;
 
@@ -380,7 +387,7 @@ gap: 30px;
 
 .clients-link:hover,
 .clients-link:focus{
-    border-color: var(--brand-color-1);
+    
     color: var(--brand-color-1);
 }
 
@@ -460,8 +467,6 @@ align-items: baseline;
 }
 
 .subtitle-footer{
-    font-weight: 700;
-    font-size: 14px;
     line-height: 1.1;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -505,9 +510,7 @@ align-items: baseline;
 .filters-list {
     display: flex;
     margin-bottom: 50px;
-    justify-content: center;
-
-    
+    justify-content: center;    
 }
 
 .filtres-list-item:not(:first-child) {
@@ -533,17 +536,25 @@ align-items: baseline;
 }
 
 
-.btn-filters:hover, .btn:focus {
+.btn-filters:hover, .btn-filters:focus {
     color: var(--brand-color-4);
     background-color:var(--brand-color-1);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;  
+}
 
-.project-card:hover,
-.project-card:focus{
+.project-link{
+    display: block;
+}
+.project-link:hover,
+.project-link:focus{
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 .project-text-box{
     padding:  20px 24px;
@@ -564,10 +575,5 @@ align-items: baseline;
     /* identical to box height, or 188% */
     color: var(--brand-color-2);
 }
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-}
+
 
