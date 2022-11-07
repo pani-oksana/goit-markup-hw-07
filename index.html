@@ -20,8 +20,7 @@
     <header class="header">
       <div class="header-container container">
         <a href="./index.html" class="logo"
-          ><span class="first-part">Web</span><span class="last-part">Studio</span></a
-        >
+          ><span class="first-part">Web</span><span class="last-part">Studio</span></a>
         <nav class="header-nav">
           <ul class="nav-list list">
             <li class="header-nav-item">
@@ -56,7 +55,7 @@
       <section class="slogan-btn">
         <div class="container-slogan-btn container">
           <h1 class="slogan">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="btn">Замовити послугу</button>
+          <button type="button" class="btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -117,9 +116,30 @@
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="about-list list">
-            <li><img src="./images/gallery-1.jpg" alt="gallery-1" width="370" height="294" /></li>
-            <li><img src="./images/gallery-2.jpg" alt="gallery-2" width="370" height="294" /></li>
-            <li><img src="./images/gallery-3.jpg" alt="gallery-3" width="370" height="294" /></li>
+            <li>
+              <div class="wrapper">
+                <img src="./images/gallery-1.jpg" alt="gallery-1" width="370" height="294" />
+                <div class="overlay-box">
+                  <p class="overlay-text">Десктопні додатки</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper">
+                <img src="./images/gallery-2.jpg" alt="gallery-2" width="370" height="294" />
+                <div class="overlay-box">
+                  <p class="overlay-text">Мобільні додатки</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper">
+                <img src="./images/gallery-3.jpg" alt="gallery-3" width="370" height="294" />
+                <div class="overlay-box">
+                  <p class="overlay-text">Дизайнерські рішення</p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -505,8 +525,20 @@
             </ul>
         </div> 
       </div>
-     
-
     </footer>
+
+    
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-btn-icon" width="14" height="14">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
