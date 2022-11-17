@@ -785,6 +785,10 @@ textarea:focus-visible {
     display: flex;
     flex-direction: column;
 
+    transition-property: border;
+    transition-duration:250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .form-label:focus-within > input,
@@ -808,7 +812,6 @@ textarea:focus-visible {
 }
 
 .form-input{
-    
     display: block;
 
     width: 100%;
@@ -818,8 +821,6 @@ textarea:focus-visible {
     border-radius: 4px;
 
     margin-bottom: 10px;
-
-    
     padding-left: 42px;
 }
 
@@ -833,7 +834,16 @@ textarea:focus-visible {
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
+
+    fill: currentColor;
+    
+    transition-property: fill;
+    transition-duration:250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  
+}
+.form-label:focus-within > .form-icon {
+    color: #2196F3;
 }
 
 
