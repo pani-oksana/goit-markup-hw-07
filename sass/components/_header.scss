@@ -1,0 +1,45 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts__mail {
+    margin-right: 50px;
+}
+
+.header-contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-2);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--brand-color-1);
+    }
+}
+
+.header-contacts__icon {
+    fill: currentColor;
+}
