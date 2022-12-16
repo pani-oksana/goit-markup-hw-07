@@ -6,7 +6,11 @@ textarea:focus-visible {
 
 .modal-form {
 
-    width: 448px;
+    max-width: 370;
+
+    @media screen and (min-width:1200px) {
+        width: 448px;
+    }
 }
 
 

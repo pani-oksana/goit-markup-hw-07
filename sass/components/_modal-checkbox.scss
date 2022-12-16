@@ -11,6 +11,7 @@
     appearance: none;
     width: 16px;
     height: 15px;
+    
 
     &-icon .unchecked {
         opacity: 1;
@@ -33,17 +34,26 @@
         opacity: 0;
     }
 
+        @media screen and(max-width:1119px){
+            margin-left: -23px;
+        }
+
 }
 
 .form-agreement-text {
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height:calc(14/12);
 
     letter-spacing: 0.03em;
 
     color: #757575;
+
+    @media screen and (min-width:1200px){
+        font-size: 14px;
+        line-height:calc(24/14);
+    }
 }
 
 .form-agreement-link {

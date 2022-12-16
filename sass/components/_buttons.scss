@@ -9,7 +9,7 @@
     
     display: inline-block;
     align-items: center;
-    min-width: 216px;
+    min-width: 200px;
     padding: 10px 32px;
     margin-right: auto;
     margin-left: auto;
@@ -26,12 +26,14 @@
         color: var(--brand-color-4);
         background-color: #188CE8;
         cursor: pointer;}
+
+        @media screen and(min-width:1200px){
+            min-width: 216px;
+        }
 }
 
 .btn-subscribe {
     display: inline-flex;
-    margin: 0 auto;
-    margin-left: 12px;
 
     font-family: inherit;
     font-weight: 500;
@@ -59,6 +61,12 @@
         &-icon{
             margin-left: 10px;
             fill: var(--brand-color-4);}
+
+    @media screen and(min-width:1200px){
+        display: inline-flex;
+        margin: 0 auto;
+        margin-left: 12px;
+    }
 }
 
 .form-btn {

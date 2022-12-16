@@ -31,9 +31,6 @@
 
     z-index: 1000;
 
-    width: 528px;
-    min-height: 581px;
-
     background-color: var(--brand-color-4);
     border-radius: 4px;
 
@@ -53,14 +50,31 @@
         transform: translate(-50%, -70%) scaleY(0.1);
     
     }
+
+    
+    @media screen and (max-width: 1199.98px) {
+        width: 100%;
+        max-width: 450px;
+        min-height: 609px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
+    }
 }
 
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: calc(30/20);
     text-align: center;
     letter-spacing: 0.03em;
 
     margin-bottom: 12px;
+
+    @media screen and (min-width:1200px){
+        font-size: 20px;
+        line-height:calc(23/20);
+    }
 }

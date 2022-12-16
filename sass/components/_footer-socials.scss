@@ -1,13 +1,31 @@
 .socials-footer {
+    @media screen and(min-width:768px){
+
+    margin-left: 165px;
+    }
+
+    @media screen and(min-width:1200px){
     margin-left: 70px;
+    }
+
+    
+    
 }
 
 .subtitle-footer {
     font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;
-    margin-bottom: 10px;
+
+        
+    margin-bottom: 20px;
+
     color: var(--brand-color-4);
+
+    @media screen and(min-width:1200px){
+    margin-bottom: 10px;
+    }
+    
 }
 
 .socials-footer-list {
@@ -15,6 +33,12 @@
     justify-content: center;
     gap: 10px;
     margin-top: 16px;
+    margin-bottom: 60px;
+
+        @media screen and(min-width:1200px){
+        margin-bottom: 0;
+    }
+
 }
 
 .socials-link-footer {
