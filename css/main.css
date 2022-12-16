@@ -1620,6 +1620,15 @@ textarea:focus-visible {
 
 .mobile-menu__item {
   display: block;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__item:hover, .mobile-menu__item:focus {
+  color: var(--brand-color-1);
 }
 
 .mobile-menu__item:nth-child(3) {
@@ -1665,15 +1674,19 @@ textarea:focus-visible {
 }
 
 .mobile-socials__link {
+  display: inline-block;
   padding-left: 10px;
-  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--brand-color-1);
 }
-
 .mobile-socials__link:first-child {
-  padding-left: 0px;
+  padding-left: 0;
+}
+
+.mobile-socials__link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }/*# sourceMappingURL=main.css.map */
