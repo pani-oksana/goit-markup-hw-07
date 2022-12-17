@@ -12,9 +12,7 @@
     text-align: center;
 
     @media screen and(min-width:768px){
-        display: flex;
-           
-        
+        display: flex; 
         text-align: center;
         
     }
@@ -23,7 +21,7 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    text-align: center;
+    text-align: left;
     }
 }
 
@@ -116,6 +114,8 @@
         }
     @media screen and(min-width:1200px){
     margin-left: auto;
+    margin-left: 93px;
+    
     }
 }
 
@@ -157,5 +157,6 @@
     @media screen and(min-width:1200px){
         display: flex;
         flex-direction: row;
+        
     }
 }
