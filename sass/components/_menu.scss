@@ -161,6 +161,17 @@ text-decoration: none;
     display: flex;
 }
 
+.mobile-socials__item{
+    display: block;
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:not(:first-child) {
+        padding-left: 10px;
+    }
+}
+
 .mobile-socials__link{
     display: inline;
     padding-right: 10px;
@@ -174,12 +185,7 @@ text-decoration: none;
     
     color: var(--brand-color-1);
     
-    &:not(:last-child){
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
-    &:not(:first-child){
-        padding-left: 10px;
-    }
+    
 }
 
 
