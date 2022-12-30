@@ -11,20 +11,21 @@
 
 .filters-list {
     display: flex;
+    justify-content: left;
     flex-wrap:wrap;
     gap: 24px;
     row-gap: 16px;
 
     margin-bottom: 48px;
 
-    @media screen and(max-width:768px){
+    @media screen and(min-width:768px){
         justify-content: center;
         margin-bottom: 64px;
  
     }
 
     @media screen and(min-width:1200px) {
-        
+        justify-content: center;
         margin-bottom: 72px;
         &-item:not(:first-child) {
             margin-left: 24px;
