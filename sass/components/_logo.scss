@@ -1,11 +1,12 @@
 .header__logo {
     font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24/18);
     text-decoration: none;
+    text-transform: uppercase;
 
-    margin-right: 93px;
+    margin-right: 76px;
     
 
     &--first-part {color: var(--brand-color-1);}
@@ -16,13 +17,14 @@
 .footer__logo {
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24/18);
     text-decoration: none;
+    text-transform: uppercase;
 
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
     &--first-part {
         color: var(--brand-color-1);

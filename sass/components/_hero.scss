@@ -1,10 +1,9 @@
 .hero {
-    background-color: var(--brand-color-3);
+    background-color: var(--dark-bg-cl);
 
     text-align: center;
 
-    max-width: 480px;
-    height: 400px;
+    
     margin-left: auto;
     margin-right: auto;
     padding: 118px 0;
@@ -16,7 +15,7 @@
     
     /*mobile screen*/
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/background-img_sm@1x.jpg);
     
     /*mobile screen retina*/
@@ -24,14 +23,14 @@
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/background-img_sm@2x.jpg);
     }
 
     /*tablet screen*/
     
     @media screen and (min-width:768px){
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/background-img_md@1x.jpg);
     
     /*tablet screen retina*/
@@ -39,14 +38,14 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/background-img_md@2x.jpg);
             }
     } 
     
     /*desktop screen*/
     @media screen and(min-width:1200px){
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/background-img_lg@1x.jpg);
     
     /*desktop screen retina*/
@@ -54,16 +53,12 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/background-img_lg@2x.jpg);
         }
     }
 
-    @media screen and (min-width:768px) {
-        max-width: 768px;
-        
-        
-    }
+    
 
     @media screen and(min-width:1200px){
         max-width: 1600px;
@@ -75,22 +70,22 @@
 
 .slogan {
 
-    font-weight: 900;
-    font-size: 26px;
-    line-height: calc(42/26);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
     
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--brand-color-4);
 
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 360px;
+    max-width: 318px;
 
-    @media screen and(min-width:1200px) {
-        font-size: 44px;
-        line-height: calc(60/44);
-        width: 696px;
+    @media screen and(min-width:768px) {
+        font-size: 56px;
+        line-height: calc(60/56);
+        max-width: 494px;
         }
 }
