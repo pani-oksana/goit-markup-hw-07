@@ -1163,7 +1163,6 @@ img {
     max-height: 586px;
     padding-left: 23px;
     padding-right: 25px;
-    overflow-y: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1171,9 +1170,13 @@ img {
     height: 100%;
     width: 408px;
     max-height: 586px;
-    overflow-y: auto;
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    overflow-y: auto;
   }
 }
 
