@@ -1,32 +1,33 @@
 .socials-footer {
-    @media screen and(min-width:768px){
+    @media screen and(min-width:768px) {
 
-    margin-left: 24px;
+        margin-left: 24px;
     }
 
-    @media screen and(min-width:1200px){
-    margin-left: 70px;
+    @media screen and(min-width:1200px) {
+        margin-left: 70px;
     }
 
-    
-    
+
+
 }
 
 .subtitle-footer {
     font-weight: 500;
     font-size: 16px;
-    line-height:calc(24/16);
+    line-height: calc(24/16);
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--brand-color-4);
-    
+
     margin-bottom: 16px;
+
     @media screen and(min-width:768px) {
         text-align: left;
     }
-    
-    
-    
+
+
+
 }
 
 .socials-footer-list {
@@ -36,7 +37,7 @@
     margin-top: 16px;
     margin-bottom: 60px;
 
-        @media screen and(min-width:768px){
+    @media screen and(min-width:768px) {
         margin-bottom: 0;
     }
 
