@@ -55,7 +55,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -529,13 +529,18 @@ img {
   color: var(--brand-color-4);
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 318px;
+  min-width: 318px;
 }
 @media screen and (min-width: 768px) {
   .slogan {
     font-size: 56px;
     line-height: 1.0714285714;
-    max-width: 494px;
+    min-width: 494px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slogan {
+    width: 700px;
   }
 }
 
@@ -599,7 +604,13 @@ img {
   line-height: 1.1111111111 40px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
   margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__subtitle {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1200px) {
   .benefits__subtitle {
@@ -665,6 +676,23 @@ img {
   margin-bottom: 72px;
 }
 
+@media screen and (max-width: 767px) {
+  .team-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-section__list {
     display: -webkit-box;
@@ -674,6 +702,12 @@ img {
         flex-wrap: wrap;
     gap: 24px;
     row-gap: 64px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -686,6 +720,8 @@ img {
 }
 
 .team-section__item {
+  display: block;
+  max-width: 264px;
   text-align: center;
   background-color: var(--brand-color-4);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

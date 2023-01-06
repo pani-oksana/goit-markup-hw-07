@@ -81,11 +81,14 @@
 
     margin: 0 auto;
     margin-bottom: 30px;
-    max-width: 318px;
+    min-width: 318px;
 
     @media screen and(min-width:768px) {
         font-size: 56px;
         line-height: calc(60/56);
-        max-width: 494px;
+        min-width: 494px;
         }
+    @media screen and(min-width:1200px) {
+        width: 700px;
+    }
 }
